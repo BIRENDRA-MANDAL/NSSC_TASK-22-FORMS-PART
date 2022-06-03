@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="utf-8"></head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;background-color: #000000;}
+* {box-sizing: border-box;}
+ 
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border:2px;
+  background: #000000;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color:#ffffff;
+  outline: none;
+  border-color:#0696E3;
+  
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.signinbtn {
+  padding: 14px 20px;
+  background-color: rgb(0, 98, 255);
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.signinbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  background:#000000;
+  width:600px;
+  margin: auto;
+  width: 60%;
+  box-sizing: border-box;
+  
+}
+
+.container:hover{
+box-shadow: 0px 0px 112px 61px rgba(8,143,247,0.97);
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signinbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1 style="color:#0696E3">Sign Up</h1></font>
+    <hr>
+    
+    <label for="text"><b style="color:#0696E3">First Name</b></label>
+    <input type="text" placeholder="First Name" name="firstname" required>
+    <label for="text"><b style="color:#0696E3">Last Name</b></label>
+    <input type="text" placeholder="Last Name" name="lastname" required>
+
+    <label for="email"><b style="color:#0696E3">Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b style="color:#0696E3">Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b style="color:#0696E3">Confirm Password</b></label>
+    <input type="password" name="psw-repeat" required>
+    
+    <label for="text"><b style="color:#0696E3">Address</b></label>
+    <input type="text" placeholder="1234 Main St." name="address" required>
+    
+    <label for="text"><b style="color:#0696E3">City</b></label>
+    <input type="text" placeholder="Your City" name="city" required>
+    
+    <label for="Text"><b style="color:#0696E3">State</b></label>
+    <input type="text" placeholder="Your State" name="state" required>
+    
+    <label for="text"><b style="color:#0696E3">PinCode</b></label>
+    <input type="text" placeholder="6 Digit PinCode" name="email" required>
+    <br>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"><font color="#0696E3"> I have filled correct information and to the best of my knowledge</font>
+    </label>
+    
+    <p style="color:#0696E3">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="submit" onclick="window.location.href='index.html'" class="signinbtn"><font color="#ffffff">Sign In</font></button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
